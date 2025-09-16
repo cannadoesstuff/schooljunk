@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOOM via JSDOS</title>
+  <script src="https://js-dos.com/7.4.3/jsdos.js"></script>
+</head>
+<body>
+  <div id="jsdos" style="width: 800px; height: 600px;"></div>
+  <script>
+    const el = document.getElementById("jsdos");
+    const dosbox = new Dos(el);
+    dosbox.run("./doom.jsdos");
+  </script>
+</body>
+</html>
